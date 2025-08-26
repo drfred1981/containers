@@ -70,7 +70,7 @@ if [ "${POSTGRES_BACKUP_ALL}" == "true" ]; then
     DEST_FILE=${S3_FILE_NAME}.sql.gz
   fi
   if [ "${USE_DB_NAME_PREFIX}" != "**None**" ]; then
-      S3_PREFIX="${S3_PREFIX}/ALL/"
+      S3_PREFIX="${S3_PREFIX}/DUMP_ALL/"
   fi
   echo "Creating dump of all databases from ${POSTGRES_HOST}..."
   pg_dumpall $POSTGRES_HOST_OPTS | gzip > $SRC_FILE

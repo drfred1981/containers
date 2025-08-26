@@ -77,11 +77,11 @@ Use `BACKUP_KEEP_DAYS` environment variable, to remove older backup than X days,
 
 ### DB name as an added prefix
 
-If `USE_DB_NAME_PREFIX` is true, the backup will add the db name to the S3_PREFIX. If  `POSTGRES_BACKUP_ALL` is true, USE_DB_NAME_PREFIX will be "ALL".
+If `USE_DB_NAME_PREFIX` is true, the backup will add the db name to the S3_PREFIX. If  `POSTGRES_BACKUP_ALL` is true, USE_DB_NAME_PREFIX will be "DUMP_ALL".
 
 
 
-#  greetings
+#  Credits
 Thanks to : 
 - https://github.com/schickling/dockerfiles
 - https://github.com/eeshugerman/postgres-backup-s3
